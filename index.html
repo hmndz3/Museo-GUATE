@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Virtual: Justo Rufino Barrios y el Siglo XIX en Guatemala</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f1e9;
+            color: #333;
+        }
+        
+        header {
+            background-color: #3c2415;
+            color: #f5f1e9;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .intro {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3c2415;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #f5f1e9;
+            border: 4px solid #9c7c5a;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -10px;
+        }
+        
+        .right::after {
+            left: -10px;
+        }
+        
+        .content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .gallery-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-item h3 {
+            margin-top: 0;
+        }
+        
+        .gallery-item p {
+            text-align: left;
+        }
+        
+        .barrios-section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .barrios-section h2 {
+            text-align: center;
+            color: #3c2415;
+        }
+        
+        .barrios-section .barrios-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .barrios-section .barrios-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .barrios-section .barrios-text {
+            flex: 2;
+            min-width: 300px;
+            padding: 1rem;
+        }
+        
+        footer {
+            background-color: #3c2415;
+            color: #f5f1e9;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 15px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Museo Virtual: Justo Rufino Barrios y el Siglo XIX en Guatemala</h1>
+    </header>
+    
+    <div class="intro">
+        <h2>Bienvenidos</h2>
+        <p>Este museo virtual explora la fascinante historia de Guatemala durante el siglo XIX, con especial énfasis en la figura de Justo Rufino Barrios, un reformador liberal que transformó el país. Explore la línea del tiempo, las galerías temáticas y conozca más sobre este importante período histórico.</p>
+    </div>
+    
+    <div class="barrios-section">
+        <h2>Justo Rufino Barrios (1835-1885)</h2>
+        <div class="barrios-content">
+            <div class="barrios-image">
+                <img src="/api/placeholder/300/240" alt="Retrato de Justo Rufino Barrios" style="max-width: 100%;" />
+                <p><em>Retrato del General Justo Rufino Barrios</em></p>
+            </div>
+            <div class="barrios-text">
+                <p>Justo Rufino Barrios fue presidente de Guatemala de 1873 a 1885 y una figura central en la Reforma Liberal de Guatemala. Conocido como "El Reformador", Barrios implementó profundos cambios que modernizaron el país:</p>
+                <ul>
+                    <li>Limitó el poder de la Iglesia Católica</li>
+                    <li>Impulsó la educación laica y la reforma educativa</li>
+                    <li>Promovió el desarrollo económico a través de la expansión del cultivo del café</li>
+                    <li>Modernizó la infraestructura con el telégrafo y ferrocarriles</li>
+                    <li>Luchó por la unificación de Centroamérica</li>
+                </ul>
+                <p>Barrios murió en 1885 durante la batalla de Chalchuapa, intentando reunificar Centroamérica por la fuerza. Su legado transformó Guatemala, estableciendo las bases para el estado moderno.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <h2 style="text-align: center; color: #3c2415;">Línea del Tiempo: Guatemala en el Siglo XIX</h2>
+        
+        <div class="container left">
+            <div class="content">
+                <h2>1821</h2>
+                <p>Independencia de Guatemala del Imperio Español, inicialmente formando parte del Primer Imperio Mexicano.</p>
+                <img src="/api/placeholder/320/200" alt="Representación de la independencia de Guatemala" />
+            </div>
+        </div>
+        
+        <div class="container right">
+            <div class="content">
+                <h2>1823-1839</h2>
+                <p>Guatemala forma parte de las Provincias Unidas del Centro de América, la federación centroamericana.</p>
+                <img src="/api/placeholder/320/200" alt="Mapa de la Federación Centroamericana" />
+            </div>
+        </div>
+        
+        <div class="container left">
+            <div class="content">
+                <h2>1839-1871</h2>
+                <p>Período conservador en Guatemala, liderado principalmente por Rafael Carrera. La Iglesia recupera su poder y privilegios.</p>
+                <img src="/api/placeholder/320/200" alt="Retrato de Rafael Carrera" />
+            </div>
+        </div>
+        
+        <div class="container right">
+            <div class="content">
+                <h2>1871</h2>
+                <p>Revolución Liberal liderada por Miguel García Granados y Justo Rufino Barrios, que pone fin a la era conservadora.</p>
+                <img src="/api/placeholder/320/200" alt="Escena de la Revolución Liberal" />
+            </div>
+        </div>
+        
+        <div class="container left">
+            <div class="content">
+                <h2>1873</h2>
+                <p>Justo Rufino Barrios asume la presidencia de Guatemala, iniciando el período conocido como la Reforma.</p>
+                <img src="/api/placeholder/320/200" alt="Justo Rufino Barrios asumiendo la presidencia" />
+            </div>
+        </div>
+        
+        <div class="container right">
+            <div class="content">
+                <h2>1873-1885</h2>
+                <p>Gobierno de Barrios: reformas en educación, separación Iglesia-Estado, expansión del cultivo del café, construcción de ferrocarriles y modernización del país.</p>
+                <img src="/api/placeholder/320/200" alt="Construcción del ferrocarril en Guatemala" />
+            </div>
+        </div>
+        
+        <div class="container left">
+            <div class="content">
+                <h2>1879</h2>
+                <p>Promulgación de la Constitución liberal que permanece vigente hasta 1944, reflejando los ideales reformistas de Barrios.</p>
+                <img src="/api/placeholder/320/200" alt="Constitución guatemalteca de 1879" />
+            </div>
+        </div>
+        
+        <div class="container right">
+            <div class="content">
+                <h2>1885</h2>
+                <p>Muerte de Justo Rufino Barrios en la batalla de Chalchuapa, mientras intentaba reunificar Centroamérica por la fuerza.</p>
+                <img src="/api/placeholder/320/200" alt="Representación de la batalla de Chalchuapa" />
+            </div>
+        </div>
+        
+        <div class="container left">
+            <div class="content">
+                <h2>1885-1898</h2>
+                <p>Continuación del período liberal bajo Manuel Lisandro Barillas y José María Reyna Barrios, sobrino de Justo Rufino Barrios.</p>
+                <img src="/api/placeholder/320/200" alt="Retrato de José María Reyna Barrios" />
+            </div>
+        </div>
+        
+        <div class="container right">
+            <div class="content">
+                <h2>1898-1920</h2>
+                <p>Gobierno de Manuel Estrada Cabrera, marcando el fin del siglo XIX e inicio del XX con una dictadura de 22 años.</p>
+                <img src="/api/placeholder/320/200" alt="Retrato de Manuel Estrada Cabrera" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <h2>Galería: Las Reformas de Barrios</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Reforma educativa" />
+                <h3>Reforma Educativa</h3>
+                <p>Barrios estableció escuelas públicas por todo el país, fundó la Escuela Normal para la formación de maestros y promovió la educación laica, quitando el control de la educación a la Iglesia Católica.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Separación Iglesia-Estado" />
+                <h3>Separación Iglesia-Estado</h3>
+                <p>Una de las reformas más controvertidas fue la confiscación de propiedades eclesiásticas, la expulsión de órdenes religiosas y la secularización de cementerios y registros civiles.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Desarrollo económico" />
+                <h3>Desarrollo Económico</h3>
+                <p>Barrios promovió la expansión del cultivo del café, que se convirtió en el motor económico de Guatemala. Esto incluyó la privatización de tierras comunales indígenas para convertirlas en plantaciones.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Infraestructura moderna" />
+                <h3>Infraestructura Moderna</h3>
+                <p>Durante su gobierno se introdujo el telégrafo, se construyeron ferrocarriles (como el que conectaba la capital con Puerto San José) y se modernizaron los puertos para facilitar la exportación.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Unión Centroamericana" />
+                <h3>Sueño de Unión Centroamericana</h3>
+                <p>El ideal de Barrios era reunificar las naciones centroamericanas. Este sueño lo llevó a la guerra que resultó en su muerte en la batalla de Chalchuapa, El Salvador, en 1885.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Código Civil" />
+                <h3>Reformas Legales</h3>
+                <p>Barrios implementó un nuevo Código Civil y Penal basado en modelos europeos, modernizando el sistema legal guatemalteco y estableciendo el matrimonio civil.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <h2>Galería: Guatemala en el Siglo XIX</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Ciudad de Guatemala en el siglo XIX" />
+                <h3>Ciudad de Guatemala</h3>
+                <p>La capital guatemalteca experimentó una importante transformación urbana durante el siglo XIX, especialmente durante la Reforma Liberal, con nuevos edificios públicos y espacios urbanos.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Plantaciones de café" />
+                <h3>Economía del Café</h3>
+                <p>Las plantaciones de café transformaron la economía y el paisaje guatemalteco en la segunda mitad del siglo XIX, creando una nueva élite económica y cambiando las relaciones laborales.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Población indígena de Guatemala" />
+                <h3>Población Indígena</h3>
+                <p>Las comunidades indígenas maya sufrieron importantes cambios durante este período, especialmente con las leyes que afectaron la propiedad comunal de tierras durante la Reforma Liberal.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Ferrocarril guatemalteco" />
+                <h3>Ferrocarriles</h3>
+                <p>La construcción de ferrocarriles, muchos financiados por capital estadounidense, conectó las regiones productoras de café con los puertos, facilitando el comercio internacional.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Vestimenta de la élite guatemalteca" />
+                <h3>Sociedad y Cultura</h3>
+                <p>La élite guatemalteca adoptó modas y costumbres europeas, mientras se desarrollaba una identidad nacional guatemalteca diferenciada del resto de Centroamérica.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Influencia extranjera en Guatemala" />
+                <h3>Influencia Extranjera</h3>
+                <p>La creciente influencia de potencias extranjeras, especialmente Estados Unidos y Alemania, marcó el desarrollo económico y político de Guatemala en el último cuarto del siglo XIX.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Museo Virtual: Justo Rufino Barrios y el Siglo XIX en Guatemala © 2025</p>
+        <p>Este museo virtual es una recreación histórica con fines educativos.</p>
+    </footer>
+</body>
+</html>
